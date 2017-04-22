@@ -15,4 +15,6 @@ let largestnthprime n =
 			if is_prime current_n then iterate current_n (current_n+1) (nprimes+1)
 		else iterate lastprime (current_n +1) nprimes
 	in iterate 2 2 1
+
+let result = largestnthprime 10001 
 ;;
