@@ -15,3 +15,4 @@ let xs2 = make_list 990 100
 let product = List.fold_left (fun y x  -> max x y) 0
 	(List.concat(List.map (fun x -> (List.filter is_palindrome (List.map (fun y -> x*y) xs1))) xs2)) ;;
 
+
